@@ -10,5 +10,5 @@ flashing = True
 while flashing:
     GPIO.output(led_pin, GPIO.HIGH)
     time.sleep(1)
-    GPIO.output(18, GPIO.LOW)
+    GPIO.output(led_pin, GPIO.LOW)
     time.sleep(1)
