@@ -5,9 +5,10 @@ GPIO.setmode(GPIO.BCM)
 
 led_pin = 26
 
-GPIO.setup(18, GPIO.OUT)
+GPIO.setup(led_pin, GPIO.OUT)
 flashing = True
 while flashing:
-    GPIO.output(18, GPIO.HIGH)
+    GPIO.output(led_pin, GPIO.HIGH)
     time.sleep(1)
     GPIO.output(18, GPIO.LOW)
+    time.sleep(1)
